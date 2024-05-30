@@ -1,0 +1,24 @@
+[package]
+name = "openai"
+version = "0.1.0"
+edition = "2021"
+authors = [" Fabio Gruschka <fabio.gruschka@gmail.com>"]
+description = "Azure - Openai Rust Extraction Client"
+repository = "https://github.com/anonydox/openai"
+license = "MIT"
+keywords = ["openai", "azure", "extraction"]
+readme = "../README.md"
+
+[dependencies]
+async-trait = "0.1.80"
+reqwest = { version = "0.12.4", features = ["json", "stream", "multipart"] }
+serde = { version = "1.0.203", features = ["derive"] }
+futures = "0.3.30"
+serde_json = "1.0.117"
+reqwest-eventsource = "=0.4.0"
+thiserror = "1.0.40"
+tokio = { version = "1.26.0", features = ["full"] }
+tokio-stream = "0.1.12"
+derive_builder = "0.20.0"
+strum = { version = "0.26.2", features = ["derive"] }
+dotenv = "0.15.0"
