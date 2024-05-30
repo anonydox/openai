@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "chat_extraction",
+]
+resolver = "2"
